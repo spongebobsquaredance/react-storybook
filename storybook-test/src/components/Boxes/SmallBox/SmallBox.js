@@ -9,8 +9,4 @@ const SmallBox = styled.div`
   width: 24px;
 `
 
-render(
-  <SmallBox />
-);
-
 export default SmallBox;
