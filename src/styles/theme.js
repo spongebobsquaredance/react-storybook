@@ -1,3 +1,5 @@
+import Lobster from '../fonts/index';
+
 export const theme = {
   colors: {
     // Text
@@ -5,6 +7,9 @@ export const theme = {
     textLight: '#cdffeb',
     textMedium: '#07456f',
     textPrimary: '#009f9d'
+  },
+  font: {
+    primary: "'Lobster', cursive";
   }
 };
 

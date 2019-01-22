@@ -4,4 +4,4 @@ import { storiesOf } from '@storybook/react';
 import SmallBox from './SmallBox';
 
 storiesOf('SmallBox', module)
-  .add('24px Box', () => <SmallBox />);
+  .add('24px Box', () => <SmallBox boxText="Box Text" />);

@@ -6,9 +6,9 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-          <SmallBox />
-          <SmallBox />
-          <SmallBox />
+          <SmallBox boxText={ "Box One" } />
+          <SmallBox boxText={ "Box Two" } />
+          <SmallBox boxText={ "Box Three" } />
         </div>
       </div>
     );
