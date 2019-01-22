@@ -1,4 +1,4 @@
-import Lobster from '../fonts/index';
+import LobsterFont from '../fonts/index';
 
 export const theme = {
   colors: {
@@ -9,8 +9,13 @@ export const theme = {
     textPrimary: '#009f9d'
   },
   font: {
-    primary: "'Lobster', cursive";
+    primary: "'Lobster', cursive"
   }
 };
+
+const LobsterArray = LobsterFont.Lobster;
+
+const fontMap = LobsterArray.map(i => ({ source: i.src, style: i.style, weight: i.weight }));
+console.log('fontMap', fontMap);
 
 export default theme;
