@@ -1,4 +1,8 @@
-import LobsterFont from '../fonts/index';
+import { createGlobalStyle } from 'styled-components'
+
+export const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Lobster');
+`
 
 export const theme = {
   colors: {
@@ -12,10 +16,5 @@ export const theme = {
     primary: "'Lobster', cursive"
   }
 };
-
-const LobsterArray = LobsterFont.Lobster;
-
-const fontMap = LobsterArray.map(i => ({ source: i.src, style: i.style, weight: i.weight }));
-console.log('fontMap', fontMap);
 
 export default theme;

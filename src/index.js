@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom';
 import { ThemeProvider } from 'styled-components';
 import './reset.css';
 import './index.css';
-import theme from './../src/styles/theme';
+import { theme, GlobalStyle } from './../src/styles/theme';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
-    <App />
-  </ThemeProvider>,
+  <React.Fragment>
+    <GlobalStyle />
+    <ThemeProvider theme={theme}>
+      <App />
+    </ThemeProvider>
+  </React.Fragment>,
   document.getElementById('root')
 );
 
