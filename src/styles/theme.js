@@ -1,7 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Lobster');
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:700,700i');
+  @import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i');
 `
 
 export const theme = {
@@ -13,7 +14,8 @@ export const theme = {
     textPrimary: '#009f9d'
   },
   font: {
-    primary: "'Lobster', cursive"
+    primary: "'Merriweather', serif",
+    secondary: "'Montserrat', sans-serif"
   }
 };
 
